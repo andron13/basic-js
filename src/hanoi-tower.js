@@ -14,10 +14,10 @@ import {NotImplementedError} from '../extensions/index.js';
  * calculateHanoi(9, 4308) => { turns: 511, seconds: 427 }
  *
  */
-export default function calculateHanoi(disksNumber, turnsSpeed) {
-    let secInHour = 60 * 60;
+export default function calculateHanoi(disks, turnsSpeed) {
+    const secInHour = 60 * 60;
     let obj = {};
-    obj.turns = Math.pow(2, disksNumber) - 1;
+    obj.turns = Math.pow(2, disks) - 1;
     obj.seconds = Math.floor(obj.turns * secInHour / turnsSpeed);
     return obj;
 }
