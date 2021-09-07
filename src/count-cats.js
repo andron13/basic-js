@@ -15,8 +15,6 @@ import {NotImplementedError} from '../extensions/index.js';
  *
  */
 export default function countCats(matrix) {
-    let arr = matrix.reduce((total, amount) => {
-        return total.concat(amount);
-    }, []);
-    return arr.filter(x => x === "^^").length;
+    return matrix.reduce((total, amount) =>
+        total.concat(amount), []).filter(x => x === "^^").length;
 }
