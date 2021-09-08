@@ -16,3 +16,4 @@ export default function countCats(matrix) {
     return matrix.reduce((total, amount) =>
         total.concat(amount), []).filter(x => x === "^^").length;
 }
+

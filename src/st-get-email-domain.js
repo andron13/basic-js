@@ -14,3 +14,4 @@ export default function getEmailDomain(email) {
     let arr = email.split("@");
     return arr[arr.length - 1];
 }
+

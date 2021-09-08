@@ -24,3 +24,4 @@ export default function renameFiles(names) {
     }
     return names;
 }
+

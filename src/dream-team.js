@@ -24,3 +24,4 @@ export default function createDreamTeam(members) {
     }
     return result.split("").sort().join("");
 }
+

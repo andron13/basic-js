@@ -19,3 +19,4 @@ export default function calculateHanoi(disks, turnsSpeed) {
     obj.seconds = Math.floor(obj.turns * secInHour / turnsSpeed);
     return obj;
 }
+

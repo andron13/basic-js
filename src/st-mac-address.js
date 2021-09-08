@@ -20,3 +20,4 @@ export default function isMAC48Address(inputString) {
     console.log(arr)
     return arr.every(element => Number && element <= 255);
 }
+

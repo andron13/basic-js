@@ -20,3 +20,4 @@ export default function deleteDigit(n) {
     }
     return Math.max(...arr);
 }
+

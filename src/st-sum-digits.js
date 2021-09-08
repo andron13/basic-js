@@ -28,3 +28,4 @@ function simpleSum(n) {
     }
     return sum;
 }
+

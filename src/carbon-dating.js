@@ -27,3 +27,4 @@ export default function dateSample(sampleActivity) {
 
     return Math.ceil(Math.log(MODERN_ACTIVITY / number) / (0.693 / HALF_LIFE_PERIOD));
 }
+

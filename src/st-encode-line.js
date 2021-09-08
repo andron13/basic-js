@@ -23,3 +23,4 @@ export default function encodeLine(str) {
     }
     return result;
 }
+
