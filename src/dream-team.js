@@ -1,5 +1,3 @@
-import {NotImplementedError} from '../extensions/index.js';
-
 /**
  * Create name of dream team based on the names of its members
  *
@@ -15,7 +13,7 @@ import {NotImplementedError} from '../extensions/index.js';
  */
 
 export default function createDreamTeam(members) {
-    if ( Array.isArray(members) !== true) {
+    if (Array.isArray(members) !== true) {
         return false;
     }
     let result = "";
@@ -26,5 +24,3 @@ export default function createDreamTeam(members) {
     }
     return result.split("").sort().join("");
 }
-
-

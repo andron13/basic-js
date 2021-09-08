@@ -1,5 +1,3 @@
-import {NotImplementedError} from '../extensions/index.js';
-
 /**
  * Create transformed array based on the control sequences that original
  * array contains
@@ -47,4 +45,3 @@ export default function transform(arr) {
     }
     return result;
 }
-

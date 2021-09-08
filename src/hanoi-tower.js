@@ -1,5 +1,3 @@
-import {NotImplementedError} from '../extensions/index.js';
-
 /**
  * Calculate turns number and time (in seconds) required
  * to solve puzzle
@@ -21,4 +19,3 @@ export default function calculateHanoi(disks, turnsSpeed) {
     obj.seconds = Math.floor(obj.turns * secInHour / turnsSpeed);
     return obj;
 }
-

@@ -1,5 +1,3 @@
-import { NotImplementedError } from '../extensions/index.js';
-
 const MODERN_ACTIVITY = 15;
 const HALF_LIFE_PERIOD = 5730;
 
@@ -17,15 +15,15 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-export default function dateSample( sampleActivity ) {
-  if (typeof sampleActivity != "string") {
-    return false;
-  }
-  let number = parseFloat(sampleActivity);
+export default function dateSample(sampleActivity) {
+    if (typeof sampleActivity != "string") {
+        return false;
+    }
+    let number = parseFloat(sampleActivity);
 
-  if (number <= 0 || number > MODERN_ACTIVITY || isNaN(number)) {
-    return false;
-  }
+    if (number <= 0 || number > MODERN_ACTIVITY || isNaN(number)) {
+        return false;
+    }
 
-  return Math.ceil(Math.log(MODERN_ACTIVITY / number) / (0.693 / HALF_LIFE_PERIOD));
+    return Math.ceil(Math.log(MODERN_ACTIVITY / number) / (0.693 / HALF_LIFE_PERIOD));
 }

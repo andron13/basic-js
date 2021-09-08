@@ -1,5 +1,3 @@
-import {NotImplementedError} from '../extensions/index.js';
-
 /**
  * In the popular Minesweeper game you have a board with some mines and those cells
  * that don't contain a mine have a number in it that indicates the total number of mines
@@ -42,7 +40,7 @@ function countBombe(matrix, i, j) {
     if (i !== matrix.length - 1) rangeRight = i + 1;
 
     let count = 0;
-    
+
     for (let k = rangeLeft; k <= rangeRight; k++) {
         for (let l = rangeTop; l <= rangeBottom; l++) {
             if (k === i && l === j) {

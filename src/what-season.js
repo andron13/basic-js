@@ -1,5 +1,3 @@
-import {NotImplementedError} from '../extensions/index.js';
-
 /**
  * Extract season from given date and expose the enemy scout!
  *
@@ -38,4 +36,3 @@ export default function getSeason(date) {
             return "autumn";
     }
 }
-
